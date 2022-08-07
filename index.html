@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body class="text-gray-600 font-body2">
+    <div> <!--content wrapper-->
+        <div>
+            <nav>
+                <div>
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/">Food House</a>
+                    </h1>
+                </div>
+                <ul>
+                    <li class="text-gray-700 font-bold">
+                        <a href="#">
+                            <span>Welcome</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Order</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!--end nav-->
+
+        <main class="px-16 py-7 bg-gray-100">
+            <div class="font-body flex justify-end">
+                <a href="#">Log in</a>
+                <a href="#" class="ml-2">Sign up</a>
+            </div>
+
+            <header>
+                <h2 class="font-semibold text-gray-700 text-4xl">Recipes</h2>
+                <h3 class="font-semibold">For Fellows</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+                <div class="mt-8">
+                    <!-- cards here -->
+                    <div class="card">
+                        <!-- overflow-hidden to hide the image corner -->
+                        <img src="public/Images/Yaunghu Biryani.jpg" alt="Yaunghu Biryani" class="w-full h-32 sm:h-48 object-cover">
+                        <!-- object-fit: cover; to deal with the stretch, thus the image be zoomed in when display is bigger-->
+
+                        <!--sm means @media (min-width: 640px) {
+                            .sm\:h-48 {
+                                height: 12rem/* 192px */;
+                            }
+                        } -->
+                        <div class="m-3">
+                            <span class="font-bold">Yaunghu Biryani</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Chef Michael</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- overflow-hidden to hide the image corner -->
+                        <img src="public/Images/Nasi Goreng.jpg" alt="Nasi Goreng" class="w-full h-32 sm:h-48 object-cover">
+                        <!-- object-fit: cover; to deal with the stretch, thus the image be zoomed in when display is bigger -->
+
+                        <!--sm means @media (min-width: 640px) {
+                            .sm\:h-48 {
+                                height: 12rem/* 192px */;
+                            }
+                        } -->
+                        <div class="m-3">
+                            <span class="font-bold">Nasi Goreng</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Chef Michael</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- overflow-hidden to hide the image corner -->
+                        <img src="public/Images/Shrimpoo Rice.jpg" alt="Shrimpoo Rice" class="w-full h-32 sm:h-48 object-cover">
+                        <!-- object-fit: cover; to deal with the stretch, thus the image be zoomed in when display is bigger-->
+
+                        <!--sm means @media (min-width: 640px) {
+                            .sm\:h-48 {
+                                height: 12rem/* 192px */;
+                            }
+                        } -->
+                        <div class="m-3">
+                            <span class="font-bold">Shrimpoo Rice</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Chef Michael</span>
+                        </div>
+                        <div class="badge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+                <div class="mt-8">
+                    <!-- cards here -->
+                </div>
+
+                <div class="flex justify-center">
+                    <div>Load more</div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
